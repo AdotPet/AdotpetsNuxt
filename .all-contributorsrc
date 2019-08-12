@@ -17,16 +17,18 @@
       "profile": "https://github.com/Morette",
       "contributions": [
         "question",
-        "code"
+        "code",
+        "new"
       ]
     }
   ],
   "contributorsPerLine": 7,
   "types": {
-    "custom": {
+    "new": {
       "symbol": "👏",
       "description": "New",
-      "link": "[<%= symbol %>](<%= url %> \"<%= description %>\"),"
+      "url": "https://github.com/adotpet",
+      "link": "[<%= symbol %>](<%= description %>\"),"
     }
-  },
+  }
 }
