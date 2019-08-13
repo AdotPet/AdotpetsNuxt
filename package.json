@@ -1,6 +1,6 @@
 {
   "name": "adotpets-nuxt",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Adoption Platatform",
   "author": "Lucas Leandro",
   "private": true,
@@ -9,17 +9,41 @@
     "build": "nuxt build",
     "start": "cross-env NODE_ENV=production node server/index.js",
     "generate": "nuxt generate",
-    "contributors": "./node_modules/.bin/all-contributors"
+    "contributors": "./node_modules/.bin/all-contributors",
+    "release": "./node_modules/.bin/standard-version"
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
+    "@nuxtjs/axios": "^5.3.6",
     "cross-env": "^5.2.0",
     "express": "^4.16.4",
-    "@nuxtjs/axios": "^5.3.6"
+    "nuxt": "^2.0.0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.9",
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
     "@nuxtjs/tailwindcss": "^1.0.0",
-    "all-contributors-cli": "^6.8.1"
+    "all-contributors-cli": "^6.8.1",
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.0.2",
+    "husky": "^3.0.3",
+    "nodemon": "^1.18.9",
+    "standard-version": "^7.0.0"
+  },
+  "standard-version": {
+    "skip": {
+      "commit": true,
+      "tags": true
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && ./node_modules/commitizen/bin/git-cz --hook",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }
