@@ -22,7 +22,7 @@ export default {
 
 :root {
   --button-background: #feb2b2;
-  --button-access: #fc8181;
+  --button-login: #fc8181;
   --button-font: 'Lato', sans-serif;
 }
 </style>
