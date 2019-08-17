@@ -1,5 +1,6 @@
 <template>
   <div class="navbar-container">
+    <img :src="Logo" alt="AdotPets Logo" class="logo-icon"/>
     <div class="buttons">
       <NavbarButton text="Home" />
       <NavbarButton text="Doar" />
@@ -13,9 +14,11 @@
 
 <script>
 import NavbarButton from "~/objects/NavbarButton.vue";
+import Logo from '~/assets/imgs/header/logo.svg';
 
 export default {
   components: {
+    Logo,
     NavbarButton
   }
 };
@@ -26,10 +29,17 @@ export default {
   width: 100vw;
   height: 7vh;
   background-color: #ebf4ff;
+
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  position: absolute;
+  left: 15px;
 }
 
 .navbar-container .buttons {
-  /* background-color: #fff; */
   height: 100%;
   width: 70%;
   display: flex;
