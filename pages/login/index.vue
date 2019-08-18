@@ -48,10 +48,6 @@
                 <router-link to="/reset-password" class="flex justify-center mt-6 text-gray-100">Esqueceu a sua senha?</router-link>
             </div>
         </div>
-        <div class="mx-auto flex mt-4">
-            <img class="w-6 social-buttons" src="../../assets/imgs/login/facebook.svg" alt="facebook login">
-            <img class="w-6 social-buttons" src="../../assets/imgs/login/twitter.svg" alt="twitter login">
-      </div>
       </div>
     </section>
   </div>
