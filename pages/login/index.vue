@@ -39,7 +39,7 @@
         <div class="mx-auto w-8/12 mt-12">
             <form class="flex flex-col">
                 <label class="text-gray-100 font-bold mb-2" for="email">E-mail</label>
-                <input class="px-3 py-2 bg-red-100 rounded" type="email" v-model="user.login" placeholder="Seu email ou nome de usuário">
+                <input class="px-3 py-2 bg-red-100 rounded" type="email" v-model="user.email" placeholder="Seu email ou nome de usuário">
                 <label class="text-gray-100 font-bold mb-2 my-4" for="password">Senha</label>
                 <input class="px-3 py-2 bg-red-100 rounded" type="password" v-model="user.password" placeholder="Sua senha">
                 <button class="mt-6 py-2 px-6 bg-red-400 hover:bg-red-500 font-bold shadow rounded text-gray-100">Login</button>
@@ -54,7 +54,16 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      user: {
+        email: "",
+        password: ""
+      }
+    }
+  }
+}
 </script>
 
 <style>
