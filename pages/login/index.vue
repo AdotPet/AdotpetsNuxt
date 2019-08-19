@@ -1,9 +1,9 @@
 <template>
   <div class="flex">
-    <section class="w-6/12 shadow-xl">
+    <section class="md:w-6/12 shadow-xl sm:block hidden">
         <img src="@/assets/imgs/login/dog.png" class="h-screen w-screen" alt="">
     </section>
-    <section class="w-6/12">
+    <section class="md:w-6/12 w-screen">
       <div class="bg-purple-700 h-screen flex flex-col justify-center">
         <div class="mx-auto">
           <svg
@@ -32,11 +32,11 @@
           </svg>
         </div>
         <div class="mx-auto">
-          <h1 class="text-gray-100 font-bold">
+          <h1 class="text-gray-100 font-bold text-center">
             Você está a um passo de adotar um novo amigo.
           </h1>
         </div>
-        <div class="mx-auto w-8/12 mt-12">
+        <div class="mx-auto w-8/12 sm:mt-12 mt-6">
             <form class="flex flex-col">
                 <label class="text-gray-100 font-bold mb-2" for="email">E-mail</label>
                 <input class="px-3 py-2 bg-red-100 rounded" type="email" v-model="user.email" placeholder="Seu email ou nome de usuário">
