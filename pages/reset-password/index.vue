@@ -1,9 +1,9 @@
 <template>
     <div class="flex">
-    <section class="w-6/12 shadow-xl">
+    <section class="md:w-6/12 shadow-xl sm:block hidden">
         <img src="@/assets/imgs/login/dog.png" class="h-screen w-screen" alt="">
     </section>
-    <section class="w-6/12">
+    <section class="md:w-6/12 w-screen">
       <div class="bg-purple-700 h-screen flex flex-col justify-center">
         <div class="mx-auto">
           <svg
@@ -32,7 +32,7 @@
           </svg>
         </div>
         <div class="mx-auto">
-          <h1 class="text-gray-100 font-bold">
+          <h1 class="text-gray-100 font-bold text-center">
             Oops! Parece que você esqueceu a senha
           </h1>
         </div>
@@ -43,7 +43,7 @@
                 <button class="mt-6 py-2 px-6 bg-red-400 hover:bg-red-500 font-bold shadow rounded text-gray-100">Recuperar conta</button>
             </form>
             <div>
-                <router-link to="/login" class="flex justify-center mt-6 text-gray-100">Lembrou a senha? Logue na sua conta</router-link>
+                <router-link to="/login" class="flex justify-center mt-6 text-gray-100 text-center">Lembrou a senha? Logue na sua conta</router-link>
             </div>
         </div>
       </div>
