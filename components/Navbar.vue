@@ -26,7 +26,7 @@ export default {
 
 <style scoped>
 .navbar-container {
-  width: 100%;
+  width: 100vw;
   height: 7vh;
   background-color: #ebf4ff;
   position: relative;
