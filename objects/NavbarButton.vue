@@ -21,7 +21,7 @@ export default {
 <style scoped>
 
   .navbar-button {
-    background-color: var(--button-background);
+    background-color: var(--color-pink-lighter);
     color: #fff;
     font-family: var(--button-font);
     font-weight: bold;
@@ -46,7 +46,7 @@ export default {
 
   .navbar-button.-login {
     background-color: #fff;
-    color: var(--button-login);
+    color: var(--color-pink);
   }
 
   .navbar-button.-login:hover {
