@@ -2,17 +2,20 @@
   <div class="container">
       <Navbar />
       <FindAnimalBar />
+      <Header />
   </div>
 </template>
 
 <script>
 import Navbar from '~/components/Navbar.vue';
-import FindAnimalBar from '~/objects/FindAnimalBar.vue';
+import Header from '~/components/Header.vue';
+import FindAnimalBar from '~/components/FindAnimalBar.vue';
 
 export default {
   components: {
     Navbar,
-    FindAnimalBar
+    FindAnimalBar,
+    Header
   }
 }
 </script>
@@ -28,11 +31,9 @@ export default {
 
   --button-font: 'Lato', sans-serif;
 }
-</style>
 
-<style>
-  .container {
-    max-width: 100vw;
-  }
-
+.container {
+  max-width: 1980px;
+  margin: auto;
+}
 </style>
